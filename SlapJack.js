@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var katraSlapJack = function (entry) {
+    var kataSlapJack = function (entry) {
 
         for (var i = 1; i <= entry; i++) {
             if (i % 3 === 0 && i % 5 === 0) {
@@ -14,19 +14,19 @@ $( document ).ready(function() {
         }
     };
 
-    $('.katraNumber').keydown(function(e) {
+    $('.kataNumber').keydown(function(e) {
         var e = (event.keyCode ? event.keyCode : event.which);
         if(e == '13') {
-            var n = $('.katraNumber').val();
+            var n = $('.kataNumber').val();
             event.preventDefault();
-            katraSlapJack(n);
-            $('.katraNumber').val('')
+            kataSlapJack(n);
+            $('.kataNumber').val('')
         }
     });
 
     $('#katra').click(function () {
-        var n = $('.katraNumber').val();
-        katraSlapJack(n);
+        var n = $('.kataNumber').val();
+        kataSlapJack(n);
 
     });
 

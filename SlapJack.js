@@ -1,4 +1,6 @@
-$( document ).ready(function() {
+/*global $, document, event*/
+
+$(document).ready(function () {
     var kataSlapJack = function (entry) {
 
         for (var i = 1; i <= entry; i++) {
@@ -14,17 +16,17 @@ $( document ).ready(function() {
         }
     };
 
-    $('.kataNumber').keydown(function(e) {
-        var e = (event.keyCode ? event.keyCode : event.which);
-        if(e == '13') {
+    $('.kataNumber').keydown(function (e) {
+        e = (event.keyCode ? event.keyCode : event.which);
+        if (e == '13') {
             var n = $('.kataNumber').val();
             event.preventDefault();
             kataSlapJack(n);
-            $('.kataNumber').val('')
+            $('.kataNumber').val('');
         }
     });
 
-    $('#katra').click(function () {
+    $('#kata').click(function () {
         var n = $('.kataNumber').val();
         kataSlapJack(n);
 

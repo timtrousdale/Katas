@@ -2,20 +2,35 @@
 
 <head>
     <script src="jquery-1.11.3.min.js"></script>
-    <script src="SlapJack.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
+    <h1> All answers given in the console for simplicity</h1>
     <h2>Slap-Jack Kata</h2>
     <h3>Rules: Divisible by 3 - Slap<br>
         Divisible by 5 - Jack</h3>
     <form>
         Enter a number:
         <br>
-        <input class="kataNumber" type="text" name="katra">
+        <input class="kataNumber" type="number" name="katra">
         <button id="kata" type="button">Start Katra</button>
     </form>
+    
+ <h2>2d to 1d Array</h2>
+    <h3>Rules: find relative location of a 2d array coordinate if the array were 1d<br>
+        In a 5 by 5 grid, remeber you are entering the coordinates</h3>
+    <form>
+        Enter the numbers:
+        <br>
+        Array[<input class="arrayX" type="number" placeholder="X coord">]
+        [<input class="arrayY" type="number" placeholder="Y coord">]
+        <br>width:<input class="arrayW" type="number" name="width" value="5">
+        Height:<input class="arrayH" type="number" name="height" value="5">
 
+        <button id="arrayFinder" type="button">Start Array Finder</button>
+    </form>
 
 
 </body>

@@ -32,4 +32,25 @@ $(document).ready(function () {
 
     });
 
+    var dArray = function (x, y, h, w) {
+        var z = 0;
+        if (x >= w || y >= h) {
+            console.log("Height/Width must be big enough to contain array index");
+            return;
+        } else {
+            var answer = (x + y + (y * (w - 1)));
+            console.log(answer);
+        }
+    };
+
+    $('#arrayFinder').click(function () {
+        var x = parseFloat($('.arrayX').val());
+        var y = parseFloat($('.arrayY').val());
+        var w = parseFloat($('.arrayW').val());
+        var h = parseFloat($('.arrayH').val());
+        dArray(x, y, h, w);
+
+    });
+
+
 });

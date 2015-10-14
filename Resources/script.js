@@ -32,13 +32,12 @@ $(document).ready(function () {
 
     });
 
-    var dArray = function (x, y, h, w) {
-        var z = 0;
-        if (x >= w || y >= h) {
+    var dArray = function (x, y, height, width) {
+        if (x >= width || y >= height) {
             console.log("Height/Width must be big enough to contain array index");
             return;
         } else {
-            var answer = (x + y + (y * (w - 1)));
+            var answer = (x + y * width);
             console.log(answer);
         }
     };

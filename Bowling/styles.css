@@ -1,0 +1,22 @@
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+tr,
+td {
+    border-collapse: separate;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    height: 20px;
+    padding: 8px;
+}
+
+.bowlingScoreSheet {
+    padding: 30px;
+}
+.frames, .score {
+ height: 40px;
+    
+}
